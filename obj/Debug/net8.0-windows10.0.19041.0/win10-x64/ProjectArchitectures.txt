@@ -1,0 +1,1 @@
+C:\Users\Sakar\source\repos\DualisPos\DualisPos.csproj;x64
