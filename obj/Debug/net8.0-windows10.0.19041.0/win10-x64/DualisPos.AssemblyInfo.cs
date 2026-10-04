@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DualisPos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6d6879709613b6f62d14fa63d351cfae6dd31e62")]
 [assembly: System.Reflection.AssemblyProductAttribute("DualisPos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DualisPos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

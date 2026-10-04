@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DualisPos.StockPage"
+    Title="Stok Yönetimi">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            MaximumWidthRequest="850"
+            HorizontalOptions="Center">
+
+            <Label
+                Text="Stok Yönetimi"
+                Style="{StaticResource PageTitle}" />
+
+            <Label
+                Text="Ürün ve stok işlemlerini buradan yönetin."
+                Style="{StaticResource PageSubtitle}" />
+
+
+            <Button
+                Text="Stok Gör"
+                Style="{StaticResource PrimaryButton}"
+                Clicked="OpenStockViewClicked" />
+
+            <Button
+                Text="Mevcut Stoka Ekle"
+                Style="{StaticResource SecondaryButton}"
+                Clicked="OpenAddStockClicked" />
+
+            <Button
+                Text="Yeni Ürün + Stok Ekle"
+                Style="{StaticResource PrimaryButton}"
+                Clicked="OpenAddProductClicked" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

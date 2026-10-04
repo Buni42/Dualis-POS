@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DualisPos.OrderPage"
+    Title="Sipariş">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="18">
+
+            <Label
+                Text="Sipariş"
+                Style="{StaticResource PageTitle}" />
+
+            <Label
+                Text="Kayıtlı ürünleri satıcısından sipariş edin."
+                Style="{StaticResource PageSubtitle}" />
+
+            <Border Style="{StaticResource CardBorder}">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Entry
+                        x:Name="BarcodeEntry"
+                        Placeholder="Ürün barkodu" />
+
+                    <Entry
+                        x:Name="SupplierEntry"
+                        Placeholder="Satıcı" />
+
+                    <Entry
+                        x:Name="QuantityEntry"
+                        Placeholder="Sipariş miktarı"
+                        Keyboard="Numeric" />
+
+                    <Button
+                        Text="Sipariş Oluştur"
+                        Style="{StaticResource PrimaryButton}"
+                        Clicked="CreateOrderClicked" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

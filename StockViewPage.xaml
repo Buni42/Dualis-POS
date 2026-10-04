@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DualisPos.StockViewPage"
+    Title="Stok Gör">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="18">
+
+        <Label
+            Text="Stok Gör"
+            Style="{StaticResource PageTitle}" />
+
+        <Border Style="{StaticResource CardBorder}">
+
+            <VerticalStackLayout Spacing="15">
+
+                <Entry
+                    Placeholder="Barkod veya ürün adı ara..." />
+
+                <Button
+                    Text="Ara"
+                    Style="{StaticResource PrimaryButton}" />
+
+                <Label
+                    Text="Stok kayıtları burada listelenecek."
+                    Style="{StaticResource PageSubtitle}" />
+
+            </VerticalStackLayout>
+
+        </Border>
+
+    </VerticalStackLayout>
+
+</ContentPage>

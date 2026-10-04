@@ -1,22 +1,24 @@
-﻿namespace DualisPos
+﻿namespace DualisPos;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage()
     {
-        int count = 0;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-
-        private void OnShowClicked(object sender, EventArgs e)
-        {
-            ResultLabel.Text = TextBox.Text;
-        }
-
-       
-
+        InitializeComponent();
     }
 
+    private async void OpenStockClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(StockPage));
+    }
+
+    private async void OpenOrderClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(OrderPage));
+    }
+
+    private async void OpenSalesClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(SalesPage));
+    }
 }
